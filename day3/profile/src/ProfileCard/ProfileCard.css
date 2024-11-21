@@ -1,0 +1,85 @@
+/* Base Styles */
+.profile-card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    max-width: 320px; 
+    margin: auto; /* Center on the page */
+}
+
+.profile-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Prevents distortion */
+    margin-bottom: 15px; 
+}
+
+.profile-name {
+    font-size: 1.5rem; 
+    font-weight: 600; /* Bold name */
+    margin: 10px 0 5px; 
+}
+
+.profile-title {
+    font-size: 1rem; 
+    font-weight: 400; 
+    color: #555; /* Dark gray text */
+    margin-bottom: 10px; 
+}
+
+.profile-description {
+    font-size: 0.9rem; 
+    text-align: center; 
+    color: #777; /* Light gray for less emphasis */
+    margin-bottom: 15px; 
+    line-height: 1.4; 
+}
+
+.profile-button {
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border: none; 
+    border-radius: 8px; /* Rounded button */
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.profile-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .profile-name {
+        font-size: 1.25rem; 
+    }
+
+    .profile-title {
+        font-size: 0.9rem; 
+    }
+
+    .profile-description {
+        font-size: 0.8rem; 
+    }
+
+    .profile-button {
+        padding: 8px 16px; 
+        font-size: 0.9rem; 
+    }
+}
